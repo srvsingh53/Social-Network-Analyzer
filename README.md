@@ -29,3 +29,19 @@ Enter the edges (node1 node2) in the social network:
 
 4 5
 
+### Sample Output
+
+The most influential user by Degree Centrality is: User 1
+
+Degree Centrality: 2
+
+
+The most influential user by Betweenness Centrality is: User 1
+
+Betweenness Centrality: 0.0
+
+
+The most influential user by Closeness Centrality is: User 1
+
+Closeness Centrality: 0.5
+
