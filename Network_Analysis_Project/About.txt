@@ -1,0 +1,42 @@
+The combined code you provided is a C++ program for Social Network Analysis. It allows users to input information about nodes (users) and their connections in a social network and then calculates different centrality measures for each node, such as Degree Centrality, Betweenness Centrality, and Closeness Centrality. Finally, it identifies the most influential users based on these centrality measures. Here's a brief explanation of the code:
+
+Input Gathering:
+
+The program starts by asking the user to input the number of nodes (users) and the number of edges (connections) in the social network.
+The user is then prompted to input the edges (connections) between nodes. The program assumes an undirected graph, so if user 1 is connected to user 2, then user 2 is also connected to user 1.
+Graph Representation:
+
+The graph is represented using an unordered_map where each node's ID is mapped to a vector of its neighboring nodes (adjacency list representation).
+The adjacency list represents the connections between nodes in the social network.
+
+Calculate Degree Centrality:
+
+The calculateDegreeCentrality function calculates the Degree Centrality for each node in the graph.
+Degree Centrality is the number of edges connected to a node, which measures the popularity or importance of a node based on the number of connections it has.
+
+Calculate Betweenness Centrality:
+
+The calculateBetweennessCentrality function calculates the Betweenness Centrality for each node in the graph.
+Betweenness Centrality measures the importance of a node as a bridge for the shortest paths between other nodes. Nodes with high Betweenness Centrality are crucial for maintaining connections in the network.
+
+Calculate Closeness Centrality:
+
+The calculateClosenessCentrality function calculates the Closeness Centrality for each node in the graph.
+Closeness Centrality measures how close a node is to all other nodes in the network. Nodes with high Closeness Centrality are more accessible and central to the network.
+
+Finding the Most Influential Users:
+
+The program identifies the most influential users based on each centrality measure.
+It finds the node with the highest Degree Centrality, Betweenness Centrality, and Closeness Centrality.
+These nodes are considered the most influential users in the social network based on their centrality measures.
+
+Output:
+
+The program prints the results for each centrality measure, including the node ID (user), the centrality value, and a message indicating the most influential user for each metric.
+The program uses Breadth-First Search (BFS) to calculate the number of shortest paths and dependencies required for Betweenness Centrality and Closeness Centrality. The BFS function processes the graph to find shortest paths, and the results are used to calculate the centrality measures.
+
+Overall, the code provides a basic implementation of Social Network Analysis, helping to identify important nodes in a given social network and understanding their influence within the network structure.
+
+
+
+
