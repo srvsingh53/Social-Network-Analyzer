@@ -45,3 +45,7 @@ The most influential user by Closeness Centrality is: User 1
 
 Closeness Centrality: 0.5
 
+## Dependencies
+
+The program utilizes the C++ standard library, and no external dependencies are required.
+
